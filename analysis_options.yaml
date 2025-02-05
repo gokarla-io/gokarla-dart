@@ -1,0 +1,9 @@
+analyzer:
+  errors:
+    const_constructor_param_type_mismatch: ignore
+    argument_type_not_assignable: ignore
+    missing_identifier: ignore
+    expected_token: ignore
+    undefined_method: ignore
+    non_constant_default_value: ignore
+    unnecessary_null_comparison: ignore

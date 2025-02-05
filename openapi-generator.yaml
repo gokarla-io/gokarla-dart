@@ -1,0 +1,28 @@
+generatorName: dart
+inputSpec: https://api.gokarla.io/public/openapi.json
+outputDir: .
+templates: templates
+
+additionalProperties:
+  pubName: "gokarla"
+  pubLibrary: "gokarla"
+  pubVersion: "1.0.0"
+  pubDescription: "Official GoKarla API SDK for Flutter & Dart"
+  pubAuthor: "GoKarla GmbH"
+  pubHomepage: "https://gokarla.io"
+
+  # Handling JSON serialization & null-safety
+  serializationLibrary: "json_serializable"
+  nullSafeAdditionalProperties: true
+  nullableFields: true
+
+  # Enum & parameter handling
+  enumPropertyNaming: "original"
+  useEnumExtension: true
+  useDefaultNullForUnknownEnumValue: true
+  enumsNullDefault: true
+
+  # Additional improvements
+  dateLibrary: "core"
+  ensureUniqueParams: true
+  sortParamsByRequiredFlag: true
